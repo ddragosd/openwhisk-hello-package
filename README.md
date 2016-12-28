@@ -1,2 +1,3 @@
 # openwhisk-hello-package
-Simple openwhisk package
+
+Simple openwhisk package.
