@@ -7,5 +7,5 @@
 function main(params) {
     var name = params.name || params.payload || 'stranger';
     var place = params.place || 'branch-1';
-    return {payload:  'Hello, ' + name + ' from ' + place + ' ...'};
+    return {payload:  'Hello, ' + name + ' from ' + place + ' !'};
 }
