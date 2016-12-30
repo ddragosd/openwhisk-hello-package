@@ -9,10 +9,13 @@ function main(params) {
     var name = params.name || params.payload || 'stranger';
     // openwhisk's api-gateway may populate context.identity
     // based on the info coming from an OAuth Token
-    if( params.context && params.context.identity ) {
+    if( params.context !== null && params.context.identity !== null ) {
         name = params.context.identity.user_id;
     }
 
     var place = params.place || 'branch-1';
-    return {payload:  'Hello, ' + name + ' from ' + place + ' !'};
+    return {
+        payload:  'Hello, ' + name + ' from ' + place + ' !',
+        event: params
+    };
 }
