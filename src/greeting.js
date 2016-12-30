@@ -9,7 +9,8 @@ function main(params) {
     var name = params.name || params.payload || 'stranger';
     // openwhisk's api-gateway may populate context.identity
     // based on the info coming from an OAuth Token
-    if( params.context !== null && params.context.identity !== null ) {
+    if( params.context !== null && typeof(params.context) !== "undefined"
+        && params.context.identity !== null ) {
         name = params.context.identity.user_id;
     }
 
