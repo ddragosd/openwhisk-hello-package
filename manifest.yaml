@@ -7,3 +7,7 @@ package:
       version: 1.0
       location: src/greeting.js
       runtime: nodejs@6
+      inputs:
+        param1:
+          type: String
+          description: A parameter for the action. To set a default value add a query string to the webhook URL with param1=any-value.
