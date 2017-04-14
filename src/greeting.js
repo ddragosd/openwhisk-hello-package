@@ -17,7 +17,7 @@ function main(params) {
     var place = params.place || 'branch....1';
     return {
         payload:  'Hello, ' + name + ' from ' + place + ' !',
-        event: params,
-        env: process.env
+        event: params
+        //, env: process.env
     };
 }
