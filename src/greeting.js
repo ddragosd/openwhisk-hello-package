@@ -14,7 +14,7 @@ function main(params) {
         name = params.context.identity.user_id;
     }
 
-    var place = params.place || 'branch....1';
+    var place = params.place || 'branch....1...with..i/o..insights';
     return {
         payload:  'Hello, ' + name + ' from ' + place + ' !',
         event: params
