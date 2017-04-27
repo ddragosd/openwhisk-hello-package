@@ -14,7 +14,7 @@ function main(params) {
         name = params.context.identity.user_id;
     }
 
-    var place = params.place || 'Serverless Conf';
+    var place = params.place || 'Serverless Conf Austin';
     return {
         payload:  'Hello, ' + name + ' from ' + place + ' !',
         event: params
